@@ -31,8 +31,8 @@ $(function(){
             $('#contact').css('background-color', 'rgb(78,245,207)');
         }
     });
-    var $win = $(window);
-    $win.on('load resize', function() {
+    // var $win = $(window);
+    // $win.on('load resize', function() {
         var windowWidth = window.innerWidth;
         if (windowWidth < 730) {
             $('.burger-btn, #header-list li a').on('click',function(){//.btn_triggerをクリックすると
@@ -42,7 +42,7 @@ $(function(){
                 
             });
         }
-    });
+    // });
     $('#header-list li a').click(function(){
         var id = $(this).attr('href');
         var position = $(id).offset().top;
